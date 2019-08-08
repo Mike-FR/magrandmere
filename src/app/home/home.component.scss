@@ -12,11 +12,21 @@ h1 {
   font-family: "Muli", sans-serif;
 }
 
-.accueil-btn,
-.galerie-btn {
+nav {
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+}
+
+.nav-btn {
   font-size: 1.15em;
   font-family: "Muli", sans-serif;
 }
+
+.navbar-dark .navbar-nav .nav-link:hover {
+    color:orange;
+    text-decoration: none;
+  }
 
 .background-img {
   background: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.1)), url("/assets/meat/restaurant1.jpg");
@@ -32,7 +42,19 @@ h1 {
   width: 100%;
   background-size: cover;
   background-position: center;
+
 }
+
+// .menuBackground a:hover {
+//     transition-property: transform;
+//     transition-duration: 0.3s;
+//   }
+  
+
+// .menuBackground a:hover {
+//     transform: scale(1.1);
+//   }
+  
 
 .wineBackground {
   background: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.1)), url("/assets/meat/wine.jpg");
@@ -55,21 +77,11 @@ a.nav-link:hover {
   cursor: pointer;
 }
 
-// a.nav-link.carte:hover ~ .background-img {
-//   background: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)), url("/assets/meat/meat1.jpg");
-//   z-index: 20;
-// }
-
-nav {
-  position: fixed;
-  width: 100%;
-}
-
-.banner-text {
+.home-container {
   padding: 350px 0 150px 0;
 }
 
-.banner-heading {
+.home-content {
   width: 100%;
   font-size: calc(3.5rem + 2.5vw);
   color: white;

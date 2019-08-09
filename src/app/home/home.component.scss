@@ -6,12 +6,6 @@
 
 // font-family: 'Amaranth', sans-serif;
 
-h1 {
-  font-size: 1.3em;
-  color: white;
-  font-family: "Muli", sans-serif;
-}
-
 nav {
   position: fixed;
   width: 100%;
@@ -24,40 +18,59 @@ nav {
 }
 
 .navbar-dark .navbar-nav .nav-link:hover {
-    color:orange;
-    text-decoration: none;
-  }
-
-.background-img {
-  background: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.1)), url("/assets/meat/restaurant1.jpg");
-  height: 100vh;
-  width: 100%;
-  background-size: cover;
-  background-position: center;
+  color: orange;
+  text-decoration: none;
 }
 
-.menuBackground {
-  background: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.1)), url("/assets/meat/meat1.jpg");
+a.nav-link:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.background-img {
+  background: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), url("/assets/meat/restaurant1.jpg");
   height: 100vh;
   width: 100%;
   background-size: cover;
   background-position: center;
+  position: relative;
+}
 
+// .background-img::before {
+//   background: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.1)), url("/assets/meat/meat2.jpg");
+//   height: 100vh;
+//   width: 100%;
+//   background-size: cover;
+//   background-position: center;
+//   opacity: 0;
+//   transition: opacity 1s linear 1s;
+//   position: absolute;
+//   content: "";
+// }
+
+// .background-img:hover::before {
+//   opacity: 1;
+// }
+
+.menuBackground {
+  background: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), url("/assets/meat/meat1.jpg");
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
 }
 
 // .menuBackground a:hover {
 //     transition-property: transform;
 //     transition-duration: 0.3s;
 //   }
-  
 
 // .menuBackground a:hover {
 //     transform: scale(1.1);
 //   }
-  
 
 .wineBackground {
-  background: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.1)), url("/assets/meat/wine.jpg");
+  background: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), url("/assets/meat/wine.jpg");
   height: 100vh;
   width: 100%;
   background-size: cover;
@@ -65,16 +78,11 @@ nav {
 }
 
 .restaurantBackground {
-  background: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.1)), url("/assets/meat/restaurant.jpg");
+  background: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), url("/assets/meat/restaurant.jpg");
   height: 100vh;
   width: 100%;
   background-size: cover;
   background-position: center;
-}
-
-a.nav-link:hover {
-  text-decoration: underline;
-  cursor: pointer;
 }
 
 .home-container {
@@ -93,6 +101,47 @@ a.nav-link:hover {
   font-size: calc(1rem + 0.5vw);
   font-family: "Muli", cursive;
 }
+
+h1 {
+  font-size: 1.3em;
+  color: white;
+  font-family: "Muli", sans-serif;
+}
+
+h2 {
+  font-size: 2.5em;
+  font-family: "Muli", cursive;
+}
+
+.description {
+  font-family: "Muli", sans-serif;
+  line-height: 1.8em;
+}
+
+.info-block {
+  font-family: "Muli", sans-serif;
+}
+
+.subtitle {
+  font-weight: bold;
+}
+
+.hour {
+  font-size: smaller;
+  font-weight: bolder;
+}
+
+a.contact-email {
+  text-decoration: none;
+}
+
+a.contact-email:link {
+  color: gray;
+}
+
+a.contact-email:hover {
+    color: orange;
+  }
 
 @media screen and (max-width: 900px) and (min-width: 480px) {
   .background-img {

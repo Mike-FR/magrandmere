@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, HostBinding, HostListener } from '@angular/core';
 
 @Component({
   selector: 'app-home',
@@ -10,8 +10,20 @@ export class HomeComponent implements OnInit {
   menuBackground = false;
   wineBackground = false;
   restaurantBackground = false;
+  navbarScroll: boolean;
 
-  constructor() { }
+  constructor() {
+    this.navbarScroll = false;
+  }
+
+  @HostListener('window:scroll', ['$event'])
+  onScrollEvent($event) {
+    if (!this.navbarScroll && $event.pageY > 825) {
+      this.navbarScroll = true;
+    } else if (this.navbarScroll && $event.pageY < 825) {
+      this.navbarScroll = false;
+    }
+  }
 
   ngOnInit() {
   }
@@ -27,4 +39,7 @@ export class HomeComponent implements OnInit {
   getRestaurantBackground() {
     this.restaurantBackground = !this.restaurantBackground;
   }
+
+
+
 }

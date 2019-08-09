@@ -1,0 +1,24 @@
+.info-block {
+  font-family: "Muli", sans-serif;
+}
+
+.subtitle {
+  font-weight: bold;
+}
+
+.hour {
+  font-size: smaller;
+  font-weight: bolder;
+}
+
+a.contact-email {
+  text-decoration: none;
+}
+
+a.contact-email:link {
+  color: gray;
+}
+
+a.contact-email:hover {
+  color: orange;
+}

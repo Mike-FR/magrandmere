@@ -26,30 +26,33 @@
     </div>
 </nav>
 
-<div class="background-img mb-4"
-    [ngClass]="{'menuBackground': menuBackground, 'wineBackground': wineBackground, 'restaurantBackground': restaurantBackground}">
-    <div class="container">
-        <div class="home-container text-center">
-            <div class="home-content">
-                <p class="adress animated fadeIn slow delay-1s">17, rue Delandine, 69002 Lyon, 06 11 11 22 33</p>
-                <ul class="nav justify-content-center">
-                    <li class="nav-item mx-4 animated fadeInUp slow">
-                        <a class="nav-link carte" (mouseenter)="getMenuBackground()"
-                            (mouseleave)="getMenuBackground()">Carte</a>
-                    </li>
-                    <li class="nav-item mx-4 vin animated fadeInDown slow">
-                        <a class="nav-link" (mouseenter)="getWineBackground()"
-                            (mouseleave)="getWineBackground()">Vins</a>
-                    </li>
-                    <li class="nav-item mx-4 restaurant animated fadeInUp slow">
-                        <a class="nav-link" (mouseenter)="getRestaurantBackground()"
-                            (mouseleave)="getRestaurantBackground()">Restaurant</a>
-                    </li>
-                </ul>
+<header>
+    <div class="background-img mb-4"
+        [ngClass]="{'menuBackground': menuBackground, 'wineBackground': wineBackground, 'restaurantBackground': restaurantBackground}">
+        <div class="container">
+            <div class="home-container text-center">
+                <div class="home-content">
+                    <p class="adress animated fadeIn slow delay-1s">17, rue Delandine, 69002 Lyon, 06 11 11 22 33</p>
+                    <ul class="nav justify-content-center">
+                        <li class="nav-item mx-4 animated fadeInUp slow">
+                            <a class="nav-link carte" (mouseenter)="getMenuBackground()"
+                                (mouseleave)="getMenuBackground()">Carte</a>
+                        </li>
+                        <li class="nav-item mx-4 vin animated fadeInDown slow">
+                            <a class="nav-link" (mouseenter)="getWineBackground()"
+                                (mouseleave)="getWineBackground()">Vins</a>
+                        </li>
+                        <li class="nav-item mx-4 restaurant animated fadeInUp slow">
+                            <a class="nav-link" (mouseenter)="getRestaurantBackground()"
+                                (mouseleave)="getRestaurantBackground()">Restaurant</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
     </div>
-</div>
+</header>
+
 
 <section class="container">
     <div class="row justify-content-center text-center">
@@ -67,10 +70,108 @@
         </p>
     </div>
 
-
     <div class="row my-5">
         <img src="assets/meat/wine-party.jpeg" alt="">
     </div>
 
-
+    <div class="row justify-content-center text-center">
+        <h2 class="my-5">Notre histoire</h2>
+        <p class="description"><em>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo officia mollitia
+                magnam iste tempore nostrum
+                nobis harum excepturi aliquam? Accusamus magni quos exercitationem odio provident nemo odit officia modi
+                nulla?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, incidunt! Ex perspiciatis delectus fugiat
+                nam
+                neque saepe tenetur sit quidem, dicta ipsam ducimus voluptatibus vero incidunt culpa vitae inventore
+                corporis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, deleniti? Illo temporibus
+                dolorem accusamus? Eius ipsam odio deserunt maxime repellat perferendis eligendi animi architecto
+                mollitia, unde facilis, fuga nihil ratione!</em>
+        </p>
+    </div>
 </section>
+
+<footer class="footer">
+    <div class="container bottom_border">
+        <div class="row">
+            <div class=" col-sm-4 col-md col-sm-4  col-12 col">
+                <h5 class="headin5_amrc col_white_amrc pt2">Nous trouver</h5>
+                <!--headin5_amrc-->
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2795.3319326197757!2d4.872537615798403!3d45.52352553750336!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f4df0825571e0d%3A0x634f6ccfa36f8f76!2sMa+Grand+M%C3%A8re!5e0!3m2!1sfr!2sfr!4v1565517166905!5m2!1sfr!2sfr" width="300" height="150" frameborder="0" style="border:0" allowfullscreen></iframe>
+                <p><i class="fa fa-location-arrow"></i> 9878/25 sec 9 rohini 35 </p>
+                <p><i class="fa fa-phone"></i> +91-9999878398 </p>
+                <p><i class="fa fa fa-envelope"></i> info@example.com </p>
+            </div>
+
+            <div class=" col-sm-4 col-md  col-6 col">
+                <h5 class="headin5_amrc col_white_amrc pt2">Quick links</h5>
+                <!--headin5_amrc-->
+                <ul class="footer_ul_amrc">
+                    <li><a href="http://webenlance.com">Image Rectoucing</a></li>
+                    <li><a href="http://webenlance.com">Clipping Path</a></li>
+                    <li><a href="http://webenlance.com">Hollow Man Montage</a></li>
+                    <li><a href="http://webenlance.com">Ebay & Amazon</a></li>
+                    <li><a href="http://webenlance.com">Hair Masking/Clipping</a></li>
+                    <li><a href="http://webenlance.com">Image Cropping</a></li>
+                </ul>
+                <!--footer_ul_amrc ends here-->
+            </div>
+
+            <div class=" col-sm-4 col-md  col-6 col">
+                <h5 class="headin5_amrc col_white_amrc pt2">Quick links</h5>
+                <!--headin5_amrc-->
+                <ul class="footer_ul_amrc">
+                    <li><a href="http://webenlance.com">Remove Background</a></li>
+                    <li><a href="http://webenlance.com">Shadows & Mirror Reflection</a></li>
+                    <li><a href="http://webenlance.com">Logo Design</a></li>
+                    <li><a href="http://webenlance.com">Vectorization</a></li>
+                    <li><a href="http://webenlance.com">Hair Masking/Clipping</a></li>
+                    <li><a href="http://webenlance.com">Image Cropping</a></li>
+                </ul>
+                <!--footer_ul_amrc ends here-->
+            </div>
+
+            <div class=" col-sm-4 col-md  col-12 col">
+                <h5 class="headin5_amrc col_white_amrc pt2">Follow us</h5>
+                <!--headin5_amrc ends here-->
+
+                <ul class="footer_ul2_amrc">
+                    <li><a href="#"><i class="fab fa-twitter fleft padding-right"></i> </a>
+                        <p>Lorem Ipsum is simply dummy text of the printing...<a href="#">https://www.lipsum.com/</a>
+                        </p>
+                    </li>
+                    <li><a href="#"><i class="fab fa-twitter fleft padding-right"></i> </a>
+                        <p>Lorem Ipsum is simply dummy text of the printing...<a href="#">https://www.lipsum.com/</a>
+                        </p>
+                    </li>
+                    <li><a href="#"><i class="fab fa-twitter fleft padding-right"></i> </a>
+                        <p>Lorem Ipsum is simply dummy text of the printing...<a href="#">https://www.lipsum.com/</a>
+                        </p>
+                    </li>
+                </ul>
+                <!--footer_ul2_amrc ends here-->
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <ul class="foote_bottom_ul_amrc">
+            <li><a href="http://webenlance.com">Home</a></li>
+            <li><a href="http://webenlance.com">About</a></li>
+            <li><a href="http://webenlance.com">Services</a></li>
+            <li><a href="http://webenlance.com">Pricing</a></li>
+            <li><a href="http://webenlance.com">Blog</a></li>
+            <li><a href="http://webenlance.com">Contact</a></li>
+        </ul>
+        <!--foote_bottom_ul_amrc ends here-->
+        <!-- <p class="text-center">Copyright @2019 | Designed With by <a href="#">Your Company Name</a></p> -->
+
+        <ul class="social_footer_ul">
+            <li><a href="http://webenlance.com"><i class="fab fa-facebook-f"></i></a></li>
+            <!-- <li><a href="http://webenlance.com"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="http://webenlance.com"><i class="fab fa-linkedin"></i></a></li> -->
+            <li><a href="http://webenlance.com"><i class="fab fa-instagram"></i></a></li>
+        </ul>
+        <!--social_footer_ul ends here-->
+    </div>
+
+</footer>

@@ -6,31 +6,7 @@
 
 // font-family: 'Amaranth', sans-serif;
 
-nav {
-  position: fixed;
-  width: 100%;
-  z-index: 10;
-  height: 70px;
-}
 
-.navScroll {
-  display: none;
-}
-
-.nav-btn {
-  font-size: 1.2em;
-  font-family: "Muli", sans-serif;
-}
-
-.navbar-dark .navbar-nav .nav-link:hover {
-  color: orange;
-  text-decoration: none;
-}
-
-a.nav-link:hover {
-  text-decoration: underline;
-  cursor: pointer;
-}
 
 .background-img {
   background: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), url("/assets/meat/restaurant1.jpg");
@@ -107,11 +83,7 @@ a.nav-link:hover {
   font-family: "Muli", cursive;
 }
 
-h1 {
-  font-size: 1.4em;
-  color: white;
-  font-family: "Muli", sans-serif;
-}
+
 
 h2 {
   font-size: 2.5em;

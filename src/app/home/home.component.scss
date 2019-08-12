@@ -124,16 +124,6 @@ h2 {
   padding: 2em;
 }
 
-@media screen and (max-width: 900px) and (min-width: 480px) {
-  .background-img {
-    height: 100%;
-  }
-
-  ul {
-    display: flex;
-    flex-direction: column;
-  }
-}
 
 /*footer*/
 .col_white_amrc {
@@ -238,3 +228,20 @@ footer p {
   height: 20px;
   text-align: center;
 }
+
+iframe {
+    border-radius: 4px;
+}
+
+@media screen and (max-width: 900px) and (min-width: 360px) {
+    .background-img {
+      height: 100%;
+    }
+  
+    ul {
+      display: flex;
+      flex-direction: column;
+    }
+
+  }
+  

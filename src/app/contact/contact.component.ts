@@ -7,9 +7,24 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ContactComponent implements OnInit {
 
+  menuBackground = false;
+  wineBackground = false;
+  restaurantBackground = false;
+
   constructor() { }
 
   ngOnInit() {
   }
 
+  getMenuBackground() {
+    this.menuBackground = !this.menuBackground;
+  }
+
+  getWineBackground() {
+    this.wineBackground = !this.wineBackground;
+  }
+
+  getRestaurantBackground() {
+    this.restaurantBackground = !this.restaurantBackground;
+  }
 }

@@ -1,5 +1,3 @@
-
-
 <header>
     <div class="background-img mb-4"
         [ngClass]="{'menuBackground': menuBackground, 'wineBackground': wineBackground, 'restaurantBackground': restaurantBackground}">
@@ -64,10 +62,10 @@
     </div>
 </section>
 
-<footer class="footer">
-    <div class="container bottom_border">
+<footer class="footer pt-4">
+    <div class="container-fluid bottom_border mb-3">
         <div class="row text-center">
-            <div class="col-sm-12 col-md-4">
+            <div class="col-sm-12 col-md-3">
                 <h5 class="headin5_amrc col_white_amrc pt2">Nous contacter</h5>
                 <!--headin5_amrc-->
                 <ul class="footer_ul_amrc">
@@ -80,34 +78,34 @@
                 <!--footer_ul_amrc ends here-->
             </div>
 
-            <div class="col-sm-12 col-md-4">
-                <h5 class="headin5_amrc col_white_amrc pt2">Nous trouver</h5>
-                <!--headin5_amrc-->
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2795.3319326197757!2d4.872537615798403!3d45.52352553750336!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f4df0825571e0d%3A0x634f6ccfa36f8f76!2sMa+Grand+M%C3%A8re!5e0!3m2!1sfr!2sfr!4v1565517166905!5m2!1sfr!2sfr"
-                    width="300" height="150" frameborder="0" style="border:0" allowfullscreen></iframe>
+            <div class="col-sm-12 col-md-6 title">
+                <h5 class="headin5_amrc col_white_amrc pt2 name">— Le Angubar —</h5>
+                <ul class="footer_ul_amrc d-flex flex-row justify-content-center">
+                    <li><a href="#"><i class="fab fa-facebook-square fa-2x m-3"></i></a></li>
+                    <li><a href="#"><i class="fab fa-instagram fa-2x m-3"></i></a></li>
+                </ul>
             </div>
 
-            <div class="col-sm-12 col-md-4">
-                <h5 class="headin5_amrc col_white_amrc pt2">Nous suivre</h5>
-                <!--headin5_amrc-->
-                <ul class="footer_ul_amrc">
-                    <li><a href="#"><i class="fab fa-facebook-square fa-2x mb-3"></i></a></li>
-                    <li><a href="#"><i class="fab fa-instagram fa-2x"></i></a></li>
-                </ul>
-                <!--footer_ul_amrc ends here-->
+            <div class="col-sm-12 col-md-3">
+                <h5 class="headin5_amrc col_white_amrc pt2">Nos horaires</h5>
+                <p class="m-0">Mardi au Vendredi</p>
+                <p class="hour">11h - 23h</p>
+                <p class="m-0">Samedi</p>
+                <p class="hour">9h - Minuit</p>
+                <p class="m-0">Dimanche</p>
+                <p class="hour">10h - 14h</p>
             </div>
         </div>
     </div>
 
-    <div class="container">
+    <div class="container under-footer">
         <ul class="foote_bottom_ul_amrc text-uppercase">
-            <li><a href="http://webenlance.com">Accueil</a></li>
-            <li><a href="http://webenlance.com">La carte</a></li>
-            <li><a href="http://webenlance.com">Les vins</a></li>
-            <li><a href="http://webenlance.com">Le restaurant</a></li>
-            <li><a href="http://webenlance.com">Galerie</a></li>
-            <li><a href="http://webenlance.com">Contact</a></li>
+            <li><a routerLink="/home">Accueil</a></li>
+            <li><a routerLink="/carte">La carte</a></li>
+            <li><a routerLink="/vin">Les vins</a></li>
+            <li><a routerLink="/restaurant">Le restaurant</a></li>
+            <li><a routerLink="/galerie">Galerie</a></li>
+            <li><a routerLink="/contact">Contact</a></li>
         </ul>
         <!--foote_bottom_ul_amrc ends here-->
         <!-- <p class="text-center">Copyright @2019 | Designed With by <a href="#">Your Company Name</a></p> -->

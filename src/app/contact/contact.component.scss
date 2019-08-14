@@ -1,3 +1,7 @@
+hr {
+    width: 90%
+}
+
 a.nav-link:hover {
   text-decoration: underline;
   cursor: pointer;
@@ -194,15 +198,6 @@ iframe {
   -webkit-background-size: cover;
 }
 
-// .menuBackground a:hover {
-//     transition-property: transform;
-//     transition-duration: 0.3s;
-//   }
-
-// .menuBackground a:hover {
-//     transform: scale(1.1);
-//   }
-
 .wineBackground {
   overflow: hidden;
   position: relative;
@@ -246,4 +241,15 @@ iframe {
 .adress {
   font-size: calc(1rem + 0.5vw);
   font-family: "Muli", cursive;
+}
+
+@media screen and (max-width: 900px) and (min-width: 360px) {
+  .background-img {
+    height: 100%;
+  }
+
+  ul {
+    display: flex;
+    flex-direction: column;
+  }
 }

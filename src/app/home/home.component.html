@@ -1,0 +1,114 @@
+<header>
+    <div class="background-img mb-4"
+        [ngClass]="{'menuBackground': menuBackground, 'wineBackground': wineBackground, 'restaurantBackground': restaurantBackground}">
+        <div class="container">
+            <div class="home-container text-center">
+                <div class="home-content">
+                    <p class="adress animated fadeIn slow delay-1s">17, rue Delandine, 69002 Lyon, 06 11 11 22 33</p>
+                    <ul class="nav justify-content-center">
+                        <li class="nav-item mx-4 animated fadeInUp slow">
+                            <a class="nav-link carte" (mouseenter)="getMenuBackground()"
+                                (mouseleave)="getMenuBackground()">Carte</a>
+                        </li>
+                        <li class="nav-item mx-4 vin animated fadeInDown slow">
+                            <a class="nav-link" (mouseenter)="getWineBackground()"
+                                (mouseleave)="getWineBackground()">Vins</a>
+                        </li>
+                        <li class="nav-item mx-4 restaurant animated fadeInUp slow">
+                            <a class="nav-link" (mouseenter)="getRestaurantBackground()"
+                                (mouseleave)="getRestaurantBackground()">Restaurant</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+<section class="container">
+    <div class="row justify-content-center text-center">
+        <h2 class="my-5">Le Angubar</h2>
+        <p class="description"><em>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo officia mollitia
+                magnam iste tempore nostrum
+                nobis harum excepturi aliquam? Accusamus magni quos exercitationem odio provident nemo odit officia modi
+                nulla?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, incidunt! Ex perspiciatis delectus fugiat
+                nam
+                neque saepe tenetur sit quidem, dicta ipsam ducimus voluptatibus vero incidunt culpa vitae inventore
+                corporis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, deleniti? Illo temporibus
+                dolorem accusamus? Eius ipsam odio deserunt maxime repellat perferendis eligendi animi architecto
+                mollitia, unde facilis, fuga nihil ratione!</em>
+        </p>
+    </div>
+
+    <div class="row my-5">
+        <img src="assets/meat/wine-party.jpeg" alt="">
+    </div>
+
+    <div class="row justify-content-center text-center">
+        <h2 class="my-5">Notre histoire</h2>
+        <p class="description"><em>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo officia mollitia
+                magnam iste tempore nostrum
+                nobis harum excepturi aliquam? Accusamus magni quos exercitationem odio provident nemo odit officia modi
+                nulla?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, incidunt! Ex perspiciatis delectus fugiat
+                nam
+                neque saepe tenetur sit quidem, dicta ipsam ducimus voluptatibus vero incidunt culpa vitae inventore
+                corporis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, deleniti? Illo temporibus
+                dolorem accusamus? Eius ipsam odio deserunt maxime repellat perferendis eligendi animi architecto
+                mollitia, unde facilis, fuga nihil ratione!</em>
+        </p>
+    </div>
+</section>
+
+<footer class="footer pt-4">
+    <div class="container-fluid bottom_border mb-3">
+        <div class="row text-center">
+            <div class="col-sm-12 col-md-4">
+                <h5 class="headin5_amrc col_white_amrc pt2">Nous contacter</h5>
+                <!--headin5_amrc-->
+                <ul class="footer_ul_amrc">
+                    <p><i class="fa fa-location-arrow mr-2"></i>17, rue Delandine</p>
+                    <p class="pl-4">69002 Lyon </p>
+                    <p><i class="fa fa-phone mr-2"></i>06 11 11 22 33</p>
+                    <p><i class="fa fa fa-envelope mr-2"></i>info@example.com </p>
+
+                </ul>
+                <!--footer_ul_amrc ends here-->
+            </div>
+
+            <div class="col-sm-12 col-md-4 title">
+                <h5 class="headin5_amrc col_white_amrc pt2 name">— Le Angubar —</h5>
+                <ul class="footer_ul_amrc d-flex flex-row justify-content-center">
+                    <li><a href="#"><i class="fab fa-facebook-square fa-2x m-3"></i></a></li>
+                    <li><a href="#"><i class="fab fa-instagram fa-2x m-3"></i></a></li>
+                </ul>
+            </div>
+
+            <div class="col-sm-12 col-md-4">
+                <h5 class="headin5_amrc col_white_amrc pt2">Nos horaires</h5>
+                <p class="m-0">Mardi au Vendredi</p>
+                <p class="hour">11h - 23h</p>
+                <p class="m-0">Samedi</p>
+                <p class="hour">9h - Minuit</p>
+                <p class="m-0">Dimanche</p>
+                <p class="hour">10h - 14h</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container under-footer text-center">
+        <ul class="foote_bottom_ul_amrc text-uppercase">
+            <li><a routerLink="/home">Accueil</a></li>
+            <li><a routerLink="/carte">La carte</a></li>
+            <li><a routerLink="/vin">Les vins</a></li>
+            <li><a routerLink="/restaurant">Le restaurant</a></li>
+            <li><a routerLink="/galerie">Galerie</a></li>
+            <li><a routerLink="/contact">Contact</a></li>
+        </ul>
+        <!--foote_bottom_ul_amrc ends here-->
+        <!-- <p class="text-center">Copyright @2019 | Designed With by <a href="#">Your Company Name</a></p> -->
+    </div>
+
+</footer>
